@@ -1,0 +1,59 @@
+/* Стили для всей страницы */
+body {
+    font-family: Arial, sans-serif; /* Шрифт как на скриншоте */
+    background-color: #fcfcfc;       /* Слегка серый фон */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Все отцентрировать по горизонтали */
+    justify-content: center;
+    min-height: 150vh;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Заголовок "Pookiee & Cara" */
+h2 {
+    color: #00c3ff;
+    font-weight: 600; /* Не слишком жирный */
+    margin-bottom: 0px;
+}
+
+/* Контейнер с пунктирной рамкой */
+.gallery-container {
+    border: 5px dashed #c9a98c; /* Коричневая пунктирная рамка */
+    border-radius: 50px;       /* Слегка скругленные углы */
+    padding: 40px;             /* Внутренний отступ */
+    background-color: #fff;    /* Белый фон внутри */
+    max-width: 700px;          /* Максимальная ширина */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* Легкая тень */
+}
+
+/* Сетка для изображений */
+.image-grid {
+    display: grid;
+    /* Создаем 3 колонки одинаковой ширины */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* Создаем 2 ряда */
+    grid-template-rows: auto auto;
+    /* Отступы между картинками */
+    gap: 10px; 
+}
+
+/* Стили для каждой картинки */
+.image-grid img {
+    width: 100%;               /* Картинка занимает всю ячейку */
+    height: auto;              /* Высота подстраивается */
+    aspect-ratio: 1 / 1;       /* Делает картинки квадратными */
+    object-fit: cover;         /* Обрезает, а не сжимает фото */
+    border-radius: 20px;       /* Скругленные углы у фото */
+    border: 1px solid #eee;    /* Тонкая светлая рамка */
+}
+
+/* Текст внизу с эмодзи */
+.footer-text {
+    margin-top: 25px;
+    font-size: 1.1em;
+    color: #040000;
+    text-align: center;
+}
